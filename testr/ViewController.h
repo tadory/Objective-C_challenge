@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+{
+    IBOutlet UILabel *label;
+    IBOutlet UITextField *tf;
+    IBOutlet UILabel *label_a;
+    
+    int number;
 
+    
+}
+
+-(IBAction)button;
 
 @end
 
